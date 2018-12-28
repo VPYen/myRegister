@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Prototype 1</title>
+   <meta name="description" content="DESCRIPTION">
+  <link rel="stylesheet" href="./prototype1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+ </head>
+
+ <body>
+ <!-- NavBar -->
+  <div class="ui raised segment">
+    <div class="header item">
+      <i class="huge money bill alternate outline icon"></i>
+      <h1>Company Name</h1>
+    </div>
+  </div>
+  <!-- End of NavBar -->
+  <!-- Search Bar -->
+  <div class="search-bar ui segment">
+    <form class="ui form">
+      <div class="field">
+        <label>Inventory Search</label>
+        <input type="text" placeholder="Enter Inventory # or Item Name" />
+      </div>
+    </form>
+  </div>
+  <!-- End of Search Bar -->
+  <!-- Inventory Container -->
+  <div class="ui very padded container raised segment">
+    <div class="ui relaxed divided list">
+      <div class="item">
+        <div class="content">
+          <div class="header">Inventory Item 1</div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Morbi varius vehicula consectetur.
+        </div>
+      </div>
+      <div class="item">
+        <div class="content">
+          <div class="header">Inventory Item 2</div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Morbi varius vehicula consectetur.
+        </div>
+      </div>
+      <div class="item">
+        <div class="content">
+          <div class="header">Inventory Item 3</div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Morbi varius vehicula consectetur.
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <div class="header">Inventory Item 4</div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Morbi varius vehicula consectetur.
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- End of Inventory Container -->
+  <!-- Checkout Form -->
+  <form id="checkout" class="ui form">
+    <h4 class="ui dividing header">Checkout</h4>
+    <div class="inline field">
+      <label>Subtotal</label>
+      <input type="text" value="$525.99"/>
+    </div>
+    <div class="inline field">
+      <label>Tax</label>
+      <input id="tax" type="text" value="8%" readonly/>
+      <input type="text" value="$42.08" readonly/>
+    </div>
+    <div class="inline field">
+      <label>Grand Total</label>
+      <input type="text" value="$568.07"/>
+    </div>
+  <button class="ui labeled icon button">
+    <i class="shop icon"></i>
+    Checkout
+  </button>
+  </form>
+  <!-- Checkout Form End -->
+ </body>
+
+ </html>
