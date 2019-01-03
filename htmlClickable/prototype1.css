@@ -23,10 +23,22 @@
   max-height: 300px;
   margin-top: 50px !important;
   margin-bottom: 50px !important;
+} */
+
+#table-container{
+  width:80%;
+  margin:50px auto 20px;
+  height:70%;
+  overflow:auto;
 }
 
-.content {
-  padding: 20px;
+.table {
+  margin: 20px;
+}
+
+.qty{
+  width:40px;
+  text-align:center;
 }
 
 .itemPic {
@@ -67,8 +79,8 @@
 ::placeholder {
   font-weight: bold;
   opacity: 1;
-}
 
+}
 label {
   margin-right: 10px;
 }
