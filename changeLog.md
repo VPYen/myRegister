@@ -7,8 +7,6 @@ Currently working on different clickable prototype templates for application.
 One checkout interface example completed.
 
 ----------
-
-----------
 28DEC2018
 
 Continued work on clickable prototype1.
