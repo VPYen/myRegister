@@ -30,48 +30,64 @@
   </div>
   <!-- End of Search Bar -->
   <!-- Inventory Container -->
-  <table class="ui very padded container raised segment table">
-    <!-- add the "Quantity" and "Price" for each item -->
-    <!-- <table class="ui relaxed divided list table"> -->
-      <tr>
-        <th>Item</th>
-        <th>Unit Price</th>
-        <th>Qty</th>
-        <th>Price</th>
-      </tr>
-      <tr class="item">
-        <td class="content">
-          <div class="header">Inventory Item 1</div>
-          <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Morbi varius vehicula consectetur.</p>
-        </td>
-      </tr>
-      <tr class="item">
-        <td class="content">
-          <div class="header">Inventory Item 2</div>
-          <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Morbi varius vehicula consectetur.</p>
-        </td>
-      </tr>
-      <tr class="item">
-        <td class="content">
-          <div class="header">Inventory Item 3</div>
-          <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Morbi varius vehicula consectetur.</p>
-        </td>
-      </tr>
-      <tr class="item">
-        <td class="content">
-          <div class="header">Inventory Item 4</div>
-          <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Morbi varius vehicula consectetur.</p>
-        </td>
-      </tr>
-    <!-- </table> -->
-  </table>
+  <div id="table-container">
+    <table class="ui very padded raised table">
+        <thead>
+          <!-- <tr class="sm-0">
+            <th>Item Details</th>
+            <th>Unit Price </th>
+            <th>Qty</th>
+            <th class="right aligned">Price</th>
+          </tr> -->
+        </thead>
+        <tbody>
+          <tr class="item">
+            <td>
+              <h2 class="header ">Inventory Item 1</h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Morbi varius vehicula consectetur.
+            </td>
+            <td><div>$20.99 each</div></td>
+            <td>Qty: <input value="1" type="number" class="qty" /></td>
+            <td class="right aligned"><div>$20.99</div></td>
+          </tr>
+          <tr class="item">
+            <td>
+              <h2 class="header">Inventory Item 2</h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Morbi varius vehicula consectetur.
+            </td>
+            <td><div>$20.99 each</div></td>
+            <td>Qty: <input value="1" type="number" class="qty" /></td>
+            <td class="right aligned"><div>$20.99</div></td>
+          </tr>
+          <tr class="item">
+            <td>
+              <h2 class="header">Inventory Item 3</h2>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Morbi varius vehicula consectetur.
+            </td>
+            <td><div>$10.99 each</div></td>
+            <td>Qty: <input value="1" type="number" class="qty" /></td>
+            <td class="right aligned"><div>$21.98</div></td>
+          </tr>
+          <tr class="item">
+            <td>
+              <h2 class="header">Inventory Item 4</h2>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Morbi varius vehicula consectetur.
+            </td>
+            <td><div>$10.99 each</div></td>
+            <td>Qty: <input value="1" type="number" class="qty" /></td>
+            <td class="right aligned"><div>$20.99</div></td>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
   <!-- End of Inventory Container -->
   <!-- Checkout Form -->
-  <form id="checkout" class="ui form">
+  <form id="checkout" class="ui form right aligned">
     <h4 class="ui dividing header">Checkout</h4>
     <div class="inline field">
       <label>Subtotal</label>

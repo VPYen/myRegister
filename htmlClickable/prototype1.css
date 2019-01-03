@@ -12,15 +12,27 @@
   width: 600px;
 }
 
-.container.segment {
+/* .container.segment {
   overflow-y: auto;
   max-height: 300px;
   margin-top: 50px !important;
   margin-bottom: 50px !important;
+} */
+
+#table-container{
+  width:80%;
+  margin:50px auto 20px;
+  height:70%;
+  overflow:auto;
 }
 
-.content {
-  padding: 20px;
+.table {
+  margin: 20px;
+}
+
+.qty{
+  width:40px;
+  text-align:center;
 }
 
 #checkout {
@@ -28,7 +40,7 @@
   float: right;
   flex-direction: column;
   align-items: flex-end;
-  margin: 20px 150px 100px 0px;
+  margin: 20px 10% 100px 0px;
 }
 
 #checkout input {
