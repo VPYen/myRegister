@@ -7,11 +7,17 @@
 }
 
 .search-bar.ui {
+  width: 600px;
   margin: 0 auto !important;
   margin-top: 50px !important;
-  width: 600px;
+  padding-bottom: 50px !important;
 }
 
+.searchBtn {
+  float: right;
+}
+
+/* Inventory Container v1 */
 /* .container.segment {
   overflow-y: auto;
   max-height: 300px;
@@ -35,6 +41,23 @@
   text-align:center;
 }
 
+.itemPic {
+  float: left;
+} */
+/* Inventory Container v1 */
+
+.container.segment {
+  overflow-y: auto;
+  max-height: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.quantity {
+  width: 50px;
+  text-align: right;
+}
+
 #checkout {
   display: flex;
   float: right;
@@ -56,4 +79,8 @@
 ::placeholder {
   font-weight: bold;
   opacity: 1;
+
+}
+label {
+  margin-right: 10px;
 }

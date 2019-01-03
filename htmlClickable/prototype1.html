@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
  </head>
-
  <body>
  <!-- NavBar -->
   <div class="ui raised segment">
@@ -26,66 +25,166 @@
         <label>Inventory Search</label>
         <input type="text" placeholder="Enter Inventory # or Item Name" />
       </div>
+      <button type="button" class="ui button searchBtn">Clear Search</button>
     </form>
   </div>
   <!-- End of Search Bar -->
-  <!-- Inventory Container -->
-  <div id="table-container">
-    <table class="ui very padded raised table">
-        <thead>
-          <!-- <tr class="sm-0">
-            <th>Item Details</th>
-            <th>Unit Price </th>
-            <th>Qty</th>
-            <th class="right aligned">Price</th>
-          </tr> -->
-        </thead>
-        <tbody>
-          <tr class="item">
-            <td>
-              <h2 class="header ">Inventory Item 1</h2>
+  <!-- Inventory Container v1 -->
+  <!-- <div class="ui very padded container raised segment">
+    <div class="ui relaxed divided list">
+      <div class="item">
+        <div class="right floated content">
+          <div class="inline field">
+            <input id="item1" class="quantity" type="text" value="3" />
+          </div>
+        </div>
+        <div class="content">
+          <i class="itemPic huge birthday cake icon"></i>
+          <div class="header">Inventory Item 1</div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Morbi varius vehicula consectetur.
+        </div>
+      </div>
+      <div class="item">
+        <div class="right floated content">
+          <div class="inline field">
+            <label>Unit Price: $10.99</label>
+            <input class="quantity" type="text" value="5" />
+          </div>
+        </div>
+        <div class="content">
+          <div class="header">Inventory Item 2</div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Morbi varius vehicula consectetur.
+        </div>
+      </div>
+      <div class="item">
+        <div class="right floated content">
+          <div class="inline field">
+            <input class="quantity" type="text" value="1" />
+          </div>
+        </div>
+        <div class="content">
+          <div class="header">Inventory Item 3</div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Morbi varius vehicula consectetur.
+      </div>
+    </div>
+    <div class="item">
+        <div class="right floated content">
+          <div class="inline field">
+            <input class="quantity" type="text" value="2" />
+          </div>
+        </div>
+      <div class="content">
+        <div class="header">Inventory Item 4</div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Morbi varius vehicula consectetur.
+      </div>
+    </div>
+    </div>
+  </div> -->
+  <!-- End of Inventory Container v1 -->
+  <!-- Inventory Container v2 -->
+  <div class="ui container raised segment">
+  <table class="ui celled padded table">
+    <!-- <thead>
+      <tr class="center aligned">
+        <th class="single line">Item Details</th>
+        <th>Unit Price</th>
+        <th>Quantity</th>
+      </tr>
+  </thead> -->
+  <tbody>
+    <tr>
+      <td>
+        <div class="ui center header">
+          <i class="itemPic birthday cake icon"></i>
+          Inventory Item 1
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Morbi varius vehicula consectetur.
+        </p>
+      </td>
+      <td class="right aligned">$10.99 each</td>
+      <td class="right aligned">
+        <label>Qty</label>
+        <input class="quantity" type="text" value="1"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="ui center header">
+          <i class="itemPic huge birthday cake icon"></i>
+          Inventory Item 2
+        </div>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Morbi varius vehicula consectetur.
-            </td>
-            <td><div>$20.99 each</div></td>
-            <td>Qty: <input value="1" type="number" class="qty" /></td>
-            <td class="right aligned"><div>$20.99</div></td>
-          </tr>
-          <tr class="item">
-            <td>
-              <h2 class="header">Inventory Item 2</h2>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Morbi varius vehicula consectetur.
-            </td>
-            <td><div>$20.99 each</div></td>
-            <td>Qty: <input value="1" type="number" class="qty" /></td>
-            <td class="right aligned"><div>$20.99</div></td>
-          </tr>
-          <tr class="item">
-            <td>
-              <h2 class="header">Inventory Item 3</h2>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Morbi varius vehicula consectetur.
-            </td>
-            <td><div>$10.99 each</div></td>
-            <td>Qty: <input value="1" type="number" class="qty" /></td>
-            <td class="right aligned"><div>$21.98</div></td>
-          </tr>
-          <tr class="item">
-            <td>
-              <h2 class="header">Inventory Item 4</h2>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Morbi varius vehicula consectetur.
-            </td>
-            <td><div>$10.99 each</div></td>
-            <td>Qty: <input value="1" type="number" class="qty" /></td>
-            <td class="right aligned"><div>$20.99</div></td>
-            </td>
-          </tr>
-        </tbody>
-    </table>
-  </div>
-  <!-- End of Inventory Container -->
+          </p>
+      </td>
+      <td class="right aligned">$10.99 each</td>
+      <td class="right aligned">
+        <label>Qty</label>
+        <input class="quantity" type="text" value="1"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="ui center header">
+          <i class="itemPic huge birthday cake icon"></i>
+          Inventory Item 3
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Morbi varius vehicula consectetur.
+        </p>
+      </td>
+      <td class="right aligned">$10.99 each</td>
+      <td class="right aligned">
+        <label>Qty</label>
+        <input class="quantity" type="text" value="1"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="ui center header">
+          <i class="itemPic huge birthday cake icon"></i>
+          Inventory Item 4
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Morbi varius vehicula consectetur.
+        </p>
+      </td>
+      <td class="right aligned">$10.99 each</td>
+      <td class="right aligned">
+        <label>Qty</label>
+        <input class="quantity" type="text" value="1"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="ui center header">
+          <i class="itemPic huge birthday cake icon"></i>
+          Inventory Item 5
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Morbi varius vehicula consectetur.
+        </p>
+      </td>
+      <td class="right aligned">$10.99 each</td>
+      <td class="right aligned">
+        <label>Qty</label>
+        <input class="quantity" type="text" value="1"/>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+  <!-- End of Inventory Container v2 -->
   <!-- Checkout Form -->
   <form id="checkout" class="ui form right aligned">
     <h4 class="ui dividing header">Checkout</h4>
