@@ -6,6 +6,10 @@
   margin-left: 30px;
 }
 
+.active.item {
+  cursor: default;
+}
+
 .search-bar.ui {
   width: 600px;
   margin: 0 auto !important;
