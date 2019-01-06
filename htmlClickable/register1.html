@@ -26,11 +26,70 @@
   <div class="search-bar ui segment">
     <form class="ui form">
       <div class="field">
-        <label>Inventory Search</label>
-        <input type="text" placeholder="Enter Inventory # or Item Name" />
+        <label for="search-input">Inventory Search</label>
+        <input id="search-input" type="text" placeholder="Enter Inventory # or Item Name" />
       </div>
-      <button type="button" class="ui button searchBtn">Clear Search</button>
+      <!-- <button type="button" class="ui button searchBtn">Clear Search</button> -->
     </form>
+    <!-- Search Output table -->
+    <div class="ui container" id="search-output">
+      <table class="ui celled padded table">
+        <tbody>
+            <tr>
+              <td>
+                <div class="ui center header">
+                  <i class="itemPic birthday cake icon"></i>
+                  Inventory Item 1
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Morbi varius vehicula consectetur.
+                </p>
+              </td>
+              <td class="right aligned">$10.99 each</td>
+              <td class="right aligned">{#} in stock</td>
+              <td class="right aligned">
+                <button type="button" class="ui button">Add to Cart</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ui center header">
+                  <i class="itemPic birthday cake icon"></i>
+                  Inventory Item 2
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Morbi varius vehicula consectetur.
+                </p>
+              </td>
+              <td class="right aligned">$11.99 each</td>
+              <td class="right aligned">{#} in stock</td>
+              <td class="right aligned">
+                <button type="button" class="ui button">Add to Cart</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ui center header">
+                  <i class="itemPic birthday cake icon"></i>
+                  Inventory Item 3
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Morbi varius vehicula consectetur.
+                </p>
+              </td>
+              <td class="right aligned">$13.99 each</td>
+              <td class="right aligned">{#} in stock</td>
+              <td class="right aligned">
+                <button type="button" class="ui button">Add to Cart</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <!-- End of Search Output table -->
   </div>
   <!-- End of Search Bar -->
   <!-- Inventory Container v1 -->
@@ -211,6 +270,7 @@
   </button>
   </form>
   <!-- Checkout Form End -->
+  <script src="register1.js"></script>
  </body>
 
  </html>
