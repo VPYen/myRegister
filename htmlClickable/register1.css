@@ -1,3 +1,7 @@
+.pgHead{
+  margin: 50px 0 0 100px !important;
+}
+
 .header.item {
   display: flex;
 }
@@ -16,6 +20,7 @@
   margin-top: 50px !important;
   padding-bottom: 50px !important;
 }
+
 
 .searchBtn {
   float: right;
@@ -51,14 +56,16 @@
 
 .itemPic {
   float: left;
-} */
+}
+
 /* Inventory Container v1 */
 
 .container.segment {
   overflow-y: auto;
   max-height: 300px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  width: 55% !important;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
 }
 
 .quantity {
@@ -66,21 +73,26 @@
   text-align: right;
 }
 
-#checkout {
-  display: flex;
+#checkout1 {
   float: right;
-  flex-direction: column;
+  padding: 5px;
+  display: flex;
+  position: fixed;
+  right: -10%;
+  bottom: -15%;
   align-items: flex-end;
+  flex-direction: column;
+  border: 2px solid black;
   margin: 20px 10% 100px 0px;
 }
 
-#checkout input {
+#checkout1 input, #checkout2 input {
   width: 100px;
   margin: 5px 0px 5px 10px;
   text-align: right;
 }
 
-#tax {
+.tax {
   width: 60px !important;
 }
 
@@ -90,5 +102,21 @@
 
 }
 label {
-  margin-right: 10px;
+  margin-right: 5px;
+}
+@media screen and (max-width: 800px) {
+  #checkout2 {
+    display: flex;
+  }
+  #checkout1 {
+    display: none;
+  }
+}
+@media screen and (min-width: 801px) {
+  #checkout1 {
+    display: flex;
+  }
+  #checkout2 {
+    display: none;
+  }
 }
