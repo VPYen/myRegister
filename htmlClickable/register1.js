@@ -1,7 +1,7 @@
 var searchOutput = document.getElementById("search-output");
 var searchInput = document.getElementById("search-input");
 
-searchInput.addEventListener("keyup", function(){
+searchInput.addEventListener("keyup", function(event){
     console.log("testing")
     console.log(event)
     if(event.key=="Backspace"){
