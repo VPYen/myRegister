@@ -1,0 +1,33 @@
+.header.item {
+  display: flex;
+}
+
+.header.item h1 {
+  margin-left: 30px;
+}
+
+.active.item {
+  cursor: default;
+}
+
+.search-bar.ui {
+  width: 600px;
+  margin: 0 auto !important;
+  margin-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
+.searchBtn {
+  float: right;
+}
+
+.container.segment {
+  overflow-y: auto;
+  max-height: 400px;
+  margin-top: 50px !important;
+  margin-bottom: 100px !important;
+}
+
+.pgHead{
+  margin: 50px 0 0 100px !important;
+}

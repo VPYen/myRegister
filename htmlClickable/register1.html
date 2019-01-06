@@ -3,7 +3,7 @@
 
 <head>
    <meta charset="UTF-8">
-   <title>Prototype 1</title>
+   <title>Register 1</title>
    <meta name="description" content="DESCRIPTION">
   <link rel="stylesheet" href="./register1.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css" />
@@ -17,11 +17,15 @@
       <h1>Company Name</h1>
     </div>
     <div class="ui horizontal link list">
-    <div class="active item">Register</div>
-    <a class="item">Management</a>
-  </div>
+      <div class="active item">Register</div>
+      <a class="item">Management</a>
+      <a class="item">History</a>
+    </div>
   </div>
   <!-- End of NavBar -->
+  <!-- Page Header -->
+  <h1 class="ui header pgHead">Checkout Register</h1>
+  <!-- Page Header End-->
   <!-- Search Bar -->
   <div class="search-bar ui segment">
     <form class="ui form">
@@ -103,7 +107,7 @@
     <tr>
       <td>
         <div class="ui center header">
-          <i class="itemPic birthday cake icon"></i>
+          <i class="itemPic huge birthday cake icon"></i>
           Inventory Item 1
         </div>
         <p>
@@ -120,7 +124,7 @@
     <tr>
       <td>
         <div class="ui center header">
-          <i class="itemPic huge birthday cake icon"></i>
+          <i class="itemPic huge coffee icon"></i>
           Inventory Item 2
         </div>
           <p>
@@ -128,7 +132,7 @@
             Morbi varius vehicula consectetur.
           </p>
       </td>
-      <td class="right aligned">$10.99 each</td>
+      <td class="right aligned">$25.99 each</td>
       <td class="right aligned">
         <label>Qty</label>
         <input class="quantity" type="text" value="1"/>
@@ -137,7 +141,7 @@
     <tr>
       <td>
         <div class="ui center header">
-          <i class="itemPic huge birthday cake icon"></i>
+          <i class="itemPic huge baseball ball icon"></i>
           Inventory Item 3
         </div>
         <p>
@@ -145,7 +149,7 @@
           Morbi varius vehicula consectetur.
         </p>
       </td>
-      <td class="right aligned">$10.99 each</td>
+      <td class="right aligned">$5.99 each</td>
       <td class="right aligned">
         <label>Qty</label>
         <input class="quantity" type="text" value="1"/>
@@ -154,7 +158,7 @@
     <tr>
       <td>
         <div class="ui center header">
-          <i class="itemPic huge birthday cake icon"></i>
+          <i class="itemPic huge bicycle icon"></i>
           Inventory Item 4
         </div>
         <p>
@@ -162,7 +166,7 @@
           Morbi varius vehicula consectetur.
         </p>
       </td>
-      <td class="right aligned">$10.99 each</td>
+      <td class="right aligned">$31.99 each</td>
       <td class="right aligned">
         <label>Qty</label>
         <input class="quantity" type="text" value="1"/>
@@ -171,7 +175,7 @@
     <tr>
       <td>
         <div class="ui center header">
-          <i class="itemPic huge birthday cake icon"></i>
+          <i class="itemPic huge lemon icon"></i>
           Inventory Item 5
         </div>
         <p>
@@ -179,7 +183,7 @@
           Morbi varius vehicula consectetur.
         </p>
       </td>
-      <td class="right aligned">$10.99 each</td>
+      <td class="right aligned">$28.99 each</td>
       <td class="right aligned">
         <label>Qty</label>
         <input class="quantity" type="text" value="1"/>
@@ -190,7 +194,7 @@
 </div>
   <!-- End of Inventory Container v2 -->
   <!-- Checkout Form -->
-  <form id="checkout" class="ui form right aligned">
+  <form id="checkout1" class="ui form right aligned">
     <h4 class="ui dividing header">Checkout</h4>
     <div class="inline field">
       <label>Subtotal</label>
@@ -198,7 +202,7 @@
     </div>
     <div class="inline field">
       <label>Tax</label>
-      <input id="tax" type="text" value="8%" readonly/>
+      <input class="tax" type="text" value="8%" readonly/>
       <input type="text" value="$42.08" readonly/>
     </div>
     <div class="inline field">
@@ -206,6 +210,25 @@
       <input type="text" value="$568.07"/>
     </div>
   <button class="ui labeled icon button">
+    <i class="shop icon"></i>
+    Checkout
+  </button>
+  </form>
+  <form id="checkout2" class="ui form">
+    <div class="inline field">
+      <label>Subtotal</label>
+      <input type="text" value="$525.99"/>
+    </div>
+    <div class="inline field">
+      <label>Tax</label>
+      <input class="tax" type="text" value="8%" readonly/>
+      <input type="text" value="$42.08" readonly/>
+    </div>
+    <div class="inline field">
+      <label>Grand Total</label>
+      <input type="text" value="$568.07"/>
+    </div>
+  <button class="ui tiny labeled icon button">
     <i class="shop icon"></i>
     Checkout
   </button>
