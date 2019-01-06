@@ -21,6 +21,15 @@
   padding-bottom: 50px !important;
 }
 
+
+.searchBtn {
+  float: right;
+}
+
+#search-output{
+  display:none;
+}
+
 /* Inventory Container v1 */
 /* .container.segment {
   overflow-y: auto;
